@@ -15,7 +15,7 @@ for language_file in glob("data/mo/*/*/*.mo"):
 setup(
     name="minigalaxy",
     version=VERSION,
-    packages=find_packages(exclude=['tests']),
+    packages=find_packages(exclude=['tests', 'tests.*']),
     scripts=['bin/minigalaxy'],
 
     data_files=[
